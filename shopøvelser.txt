@@ -1,0 +1,55 @@
+1)Hvor mange leverandører kommer fra Tyskland?
+
+2) Lav en liste så man kan se den kategori fra products der forekommer færrest gange
+
+3) Opdatér orderdate i orders så datoerne begynder i 2018 og slutter i 2019.
+Altså f.eks skal datoen for orderid 10443 ændres fra 1997-02-12 til 2019-11-01
+
+4) Find den varekategori der har genereret flest penge - f.eks ved at frembringe flg:
+total	CategoryID
+22,328	5
+23,634	7
+29,652	8
+35,072	2
+51,677	6
+54,909	3
+70,377	4
+99,464	1
+
+5) Find de varer som ikke indgår i en ordre, dvs. De er ikke blevet solgt overhovedet
+
+6) Find den ansatte der har lavet flest ordrer - f.eks ved at frembringe flg:
+total	EmployeeID
+6	9
+11	5
+14	7
+18	6
+20	2
+27	8
+29	1
+31	3
+40	4
+
+7) Find det shippingfirma der bliver brugt mest - f.eks ved at frembringe flg:
+total	ShipperID
+54	1
+74	2
+68	3
+
+Eller
+
+total	ShipperID
+54	1
+74	2
+68	3
+0	NULL
+
+
+8) Spørgsmålet om at finde den varekategori der havde genereret flest penge frembragte:
+total	CategoryID
+99,464	1
+
+Hvordan kan man opdatere databasen så den frembringer flg:
+total,CategoryID
+93	1
+(Brug start transaction og rollback hvis du ikke har lavet en backup)
